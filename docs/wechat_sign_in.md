@@ -3,4 +3,4 @@
 ![](http://www.ruanyifeng.com/blogimg/asset/2014/bg2014051203.png)
 
 微信公众号登陆流程
-![](C:/Users/david/Downloads/微信公众号联合登陆流程.png)
+![](./img/微信公众号联合登陆流程.png)
