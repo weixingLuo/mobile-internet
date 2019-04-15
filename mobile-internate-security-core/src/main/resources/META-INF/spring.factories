@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.after.internet.security.core.config.UaaSecurityAutoConfiguration,\
+top.after.internet.security.sms.config.SmsCodeAuthenticationAutoConfig,\
+top.after.internet.security.social.config.SocialSigninAutoConfiguration

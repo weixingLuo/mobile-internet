@@ -1,0 +1,39 @@
+
+internet:
+  security:
+    uaa:
+      jwt-secret: xxx
+      jwt-expiration: 86400
+      password-formate: ^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$
+      create-table-on-startup: true
+      refresh-token-key: salt
+    web:
+      success-url: index.html
+      logout-url: /login/logout
+      logout-success-url: index.html
+      user-access-path: /**
+      signin-path:
+      - /login/**
+      - /siginin/**
+      remember-me-path: /login/**
+      refresh-token-validity-seconds: 1209600
+      ignoring:
+      - /h2-console
+      - /h2-console/**
+      - /**/*.js
+      - /**/*.css
+      - /**/*.html
+      - /**/*.png
+      - /swagger/**
+      - /swagger-resources/**
+      - /webjars/springfox-swagger-ui/**
+      - /swagger-ui.html
+      - /swagger-ui.html/**
+      - /v2/**
+      - /error
+    social:
+      sign-in-url: /signin
+      sign-up-url: /signup
+
+kaptcha:
+  border: yes

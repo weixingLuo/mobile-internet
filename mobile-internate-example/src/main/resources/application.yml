@@ -1,0 +1,56 @@
+debug: true
+spring:
+  jpa:
+    show-sql: true
+    hibernate.ddl-auto: update
+  h2.console:
+      path: /h2-console
+      settings.web-allow-others: true 
+  datasource:
+    url: jdbc:h2:mem:test;MODE=MYSQL;DB_CLOSE_DELAY=-1
+    username: user
+    password: pw
+
+internet:
+  security:
+    uaa:
+      default-password: 0Lli|oIO1
+      password-formate: ^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z\\-\\_\\*\\|]{6,12}$
+      create-table-on-startup: true
+      refresh-token-key: salt
+      # base64EncodedSecretKey
+      jwt-secret: eHh4
+      jwt-expiration: 86400
+    web:
+      success-url: /user
+      logout-url: /login/logout
+      logout-success-url: /index.html
+      system-access-path: /api/**
+      user-access-path: /**
+      signin-path:
+      - /login/**
+      - /siginin/**
+      remember-me-path: /login/**
+      refresh-token-validity-seconds: 1209600
+      ignoring:
+      - /h2-console
+      - /h2-console/**
+      - /**/*.js
+      - /**/*.css
+      - /**/*.html
+      - /**/*.png
+      - /swagger/**
+      - /swagger-resources/**
+      - /webjars/springfox-swagger-ui/**
+      - /swagger-ui.html
+      - /swagger-ui.html/**
+      - /v2/**
+      - /error
+    social:
+      sign-in-url: /signin
+      sign-up-url: /signup
+
+sms:
+  template: login
+kaptcha:
+  border: yes
