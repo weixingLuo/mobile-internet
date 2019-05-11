@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>top.after.internet</groupId>
+		<groupId>com.github.weixingluo.internet</groupId>
 		<artifactId>mobile-internet-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 		<relativePath /> <!-- lookup parent from repository -->
@@ -39,18 +39,18 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>top.after.internet.security</groupId>
+			<groupId>com.github.weixingluo.internet.security</groupId>
 			<artifactId>wechat-sigin-in</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>top.after.internet.security</groupId>
+			<groupId>com.github.weixingluo.internet.security</groupId>
 			<artifactId>mobile-security-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>top.after.internet.web</groupId>
+			<groupId>com.github.weixingluo.internet.web</groupId>
 			<artifactId>mobile-web-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
